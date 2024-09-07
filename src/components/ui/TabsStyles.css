@@ -1,0 +1,81 @@
+/* Tabs List */
+.tabs-list {
+    display: inline-flex;
+    height: 2.5rem; /* h-10 */
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem; /* rounded-md */
+    background-color: #f1f5f9; /* bg-slate-100 */
+    padding: 0.25rem; /* p-1 */
+    color: #6b7280; /* text-slate-500 */
+  }
+  
+  .tabs-list.dark-mode {
+    background-color: #1f2937; /* dark:bg-slate-800 */
+    color: #9ca3af; /* dark:text-slate-400 */
+  }
+  
+  /* Tabs Trigger */
+  .tabs-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap; /* whitespace-nowrap */
+    border-radius: 0.125rem; /* rounded-sm */
+    padding: 0.375rem 0.75rem; /* px-3 py-1.5 */
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    ring-offset: #ffffff; /* ring-offset-white */
+  }
+  
+  .tabs-trigger:focus-visible {
+    outline: none;
+    ring: 2px solid #111827; /* focus-visible:ring-slate-950 */
+    ring-offset: 2px; /* focus-visible:ring-offset-2 */
+  }
+  
+  .tabs-trigger:disabled {
+    pointer-events: none; /* disabled:pointer-events-none */
+    opacity: 0.5; /* disabled:opacity-50 */
+  }
+  
+  .tabs-trigger[data-state="active"] {
+    background-color: #ffffff; /* data-[state=active]:bg-white */
+    color: #111827; /* data-[state=active]:text-slate-950 */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* data-[state=active]:shadow-sm */
+  }
+  
+  .tabs-trigger.dark-mode {
+    ring-offset: #1f2937; /* dark:ring-offset-slate-950 */
+  }
+  
+  .tabs-trigger.dark-mode:focus-visible {
+    ring: 2px solid #d1d5db; /* dark:focus-visible:ring-slate-300 */
+  }
+  
+  .tabs-trigger.dark-mode[data-state="active"] {
+    background-color: #1f2937; /* dark:data-[state=active]:bg-slate-950 */
+    color: #f9fafb; /* dark:data-[state=active]:text-slate-50 */
+  }
+  
+  /* Tabs Content */
+  .tabs-content {
+    margin-top: 0.5rem; /* mt-2 */
+    ring-offset: #ffffff; /* ring-offset-white */
+  }
+  
+  .tabs-content:focus-visible {
+    outline: none;
+    ring: 2px solid #111827; /* focus-visible:ring-slate-950 */
+    ring-offset: 2px; /* focus-visible:ring-offset-2 */
+  }
+  
+  .tabs-content.dark-mode {
+    ring-offset: #1f2937; /* dark:ring-offset-slate-950 */
+  }
+  
+  .tabs-content.dark-mode:focus-visible {
+    ring: 2px solid #d1d5db; /* dark:focus-visible:ring-slate-300 */
+  }
+  

@@ -1,0 +1,198 @@
+/* Common Styles */
+.dropdown-menu-sub-trigger {
+    display: flex;
+    cursor: default;
+    select: none;
+    align-items: center;
+    border-radius: 0.125rem; /* rounded-sm */
+    padding: 0.375rem 0.5rem; /* px-2 py-1.5 */
+    font-size: 0.875rem; /* text-sm */
+    outline: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .dropdown-menu-sub-trigger-inset {
+    padding-left: 2rem; /* pl-8 */
+  }
+  
+  .dropdown-menu-chevron {
+    margin-left: auto;
+    height: 1rem; /* h-4 */
+    width: 1rem; /* w-4 */
+  }
+  
+  .dropdown-menu-sub-content {
+    z-index: 50;
+    min-width: 8rem; /* min-w-[8rem] */
+    overflow: hidden;
+    border-radius: 0.375rem; /* rounded-md */
+    border: 1px solid #e2e8f0; /* border-slate-200 */
+    background-color: white; /* bg-white */
+    padding: 0.25rem; /* p-1 */
+    color: #1e293b; /* text-slate-950 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  
+  .dropdown-menu-sub-content[data-state="open"] {
+    animation: fade-in 0.2s, zoom-in 0.2s;
+  }
+  
+  .dropdown-menu-sub-content[data-state="closed"] {
+    animation: fade-out 0.2s, zoom-out 0.2s;
+  }
+  
+  .dropdown-menu-content {
+    z-index: 50;
+    min-width: 8rem; /* min-w-[8rem] */
+    overflow: hidden;
+    border-radius: 0.375rem; /* rounded-md */
+    border: 1px solid #e2e8f0; /* border-slate-200 */
+    background-color: white; /* bg-white */
+    padding: 0.25rem; /* p-1 */
+    color: #1e293b; /* text-slate-950 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow-md */
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  
+  .dropdown-menu-content[data-state="open"] {
+    animation: fade-in 0.2s, zoom-in 0.2s;
+  }
+  
+  .dropdown-menu-content[data-state="closed"] {
+    animation: fade-out 0.2s, zoom-out 0.2s;
+  }
+  
+  .dropdown-menu-item {
+    position: relative;
+    display: flex;
+    cursor: default;
+    select: none;
+    align-items: center;
+    border-radius: 0.125rem; /* rounded-sm */
+    padding: 0.375rem 0.5rem; /* px-2 py-1.5 */
+    font-size: 0.875rem; /* text-sm */
+    outline: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .dropdown-menu-item-inset {
+    padding-left: 2rem; /* pl-8 */
+  }
+  
+  .dropdown-menu-checkbox-item {
+    position: relative;
+    display: flex;
+    cursor: default;
+    select: none;
+    align-items: center;
+    border-radius: 0.125rem; 
+    padding: 0.375rem 0.5rem; 
+    font-size: 0.875rem; 
+    outline: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .dropdown-menu-checkbox-indicator {
+    position: absolute;
+    left: 0.5rem; 
+    display: flex;
+    height: 1rem; 
+    width: 1rem; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown-menu-check-icon {
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  .dropdown-menu-radio-item {
+    position: relative;
+    display: flex;
+    cursor: default;
+    select: none;
+    align-items: center;
+    border-radius: 0.125rem; 
+    padding: 0.375rem 0.5rem;
+    font-size: 0.875rem; 
+    outline: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .dropdown-menu-radio-indicator {
+    position: absolute;
+    left: 0.5rem; 
+    display: flex;
+    height: 1rem; 
+    width: 1rem; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dropdown-menu-radio-icon {
+    height: 0.5rem; 
+    width: 0.5rem; 
+  }
+  
+  .dropdown-menu-label {
+    padding: 0.375rem 0.5rem; 
+    font-size: 0.875rem; 
+    font-weight: 600; 
+  }
+  
+  .dropdown-menu-label-inset {
+    padding-left: 2rem; 
+  }
+  
+  .dropdown-menu-separator {
+    margin: 0 -0.25rem 0.25rem; 
+    height: 1px;
+    background-color: #e2e8f0; 
+  }
+  
+  .dropdown-menu-shortcut {
+    margin-left: auto;
+    font-size: 0.75rem; 
+    letter-spacing: 0.05em; 
+    opacity: 0.6;
+  }
+  
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes zoom-in {
+    from {
+      transform: scale(0.95);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes zoom-out {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.95);
+    }
+  }
+  

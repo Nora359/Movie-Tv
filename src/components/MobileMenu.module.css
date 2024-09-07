@@ -1,0 +1,64 @@
+.menuContainer {
+    position: fixed;
+    top: 0;
+    text-align: white;
+    border-right: 1px solid #4b5563; /* border-gray-600 */
+    padding-top: 4rem; /* pt-16 */
+    padding-right: 1.25rem; /* pr-5 */
+    height: 100vh;
+    width: fit-content;
+    background-color: #000000; /* bg-black */
+    overflow-y: hidden;
+    z-index: 40;
+    /* Transition effect for visibility */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menuContainer.hidden {
+    transform: translateX(100%);
+  }
+  
+  .menuContainer.visible {
+    transform: translateX(0);
+  }
+  
+  .menuList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.5rem; /* space-y-14 */
+    font-size: 1.125rem; /* text-lg */
+    color: rgba(156, 163, 175, 1); /* text-slate-300 */
+    font-weight: 500; /* font-medium */
+    width: 70vw; /* Default width */
+  }
+  
+  .menuList.sm {
+    width: 50vw; /* sm:w-[50vw] */
+  }
+  
+  .menuList.md {
+    width: 30vw; /* md:w-[30vw] */
+  }
+  
+  .menuItem {
+    position: relative;
+  }
+  
+  .navLink {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space between icon and text */
+    color: inherit; /* inherit text color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .navLink:hover {
+    color: rgba(156, 163, 175, 1); /* Change color on hover if needed */
+  }
+  
+  .icon {
+    font-size: 1.5rem; /* size={24} */
+  }
+  

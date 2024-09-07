@@ -1,0 +1,38 @@
+
+
+.container {
+    height: 24rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem; 
+    text-align: center; 
+    font-size: 1.125rem;
+    font-weight: 900; 
+    color: #1e293b; 
+    flex-direction: column;
+  }
+  
+  .container span:first-of-type {
+    font-size: 1.875rem;
+  }
+  
+  .container span:last-of-type {
+    color: #047857; 
+    font-weight: 400;
+    font-size: 1.5rem; 
+  }
+  
+  .link {
+    border: 2px solid;
+    border-radius: 0.5rem; 
+    padding: 0.5rem 1rem; 
+    font-weight: 500; 
+    color: #6b7280; 
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    background-color: #f1f5f9; 
+  }
+  
